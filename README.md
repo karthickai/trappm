@@ -19,11 +19,11 @@ trappm.predict("resnet101_32.onnx")
 ### Environment setup
 ```
 
-pip install torch==2.0.1 
+pip install torch==2.0.0 
 
 pip install torch_geometric 
 
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.1+cu117.html 
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu117.html 
 
 pip install onnx networkx
 ```
