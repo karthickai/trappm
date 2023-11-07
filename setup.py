@@ -21,8 +21,8 @@ setup(
     python_requires='>=3.10',
     install_requires=[
         'torch==2.0.0',
-        'torch-cluster==1.6.1',
         'torch-geometric==2.3.0',
+        'torch-cluster==1.6.1',
         'torch-scatter==2.1.1',
         'torch-sparse==0.6.17',
         'torch-spline-conv==1.2.2',
