@@ -29,6 +29,7 @@ setup(
         'timm==0.6.13',
         'onnx==1.13.1',
         'networkx==3.1',
+        'rich'
     ],
     entry_points={
         'console_scripts': [
