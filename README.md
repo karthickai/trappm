@@ -60,7 +60,6 @@ author="Panner Selvam, Karthick
 and Brorsson, Mats",
 title="Can Semi-Supervised Learning Improve Prediction of
 Deep Learning Model Resource Consumption?",
-booktitle="NeurIPS 2023 ML for system workshop",
-year="2023",
+booktitle="Machine Learning for Systems Workshop at 37th NeurIPS Conference, 2023, New Orleans, LA, USA",
 }
 ```
