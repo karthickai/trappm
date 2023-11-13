@@ -18,6 +18,7 @@ trappm.predict("resnet101_32.onnx")
 
 ### Environment setup
 ```
+# Prerequsite CUDA 11.7
 
 pip install torch==2.0.0 
 
