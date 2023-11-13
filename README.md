@@ -35,6 +35,23 @@ cd trappm
 pip install -e .
 ```
 
+### Reproducibility
+Download and extract dataset [link](https://uniluxembourg-my.sharepoint.com/:u:/g/personal/karthick_pannerselvam_uni_lu/EStmG2f6KE9Bk4HDtkrBYSEBL2QnUXlK76qrmGCrARc7lg?e=ZaiV0d)
+
+Change RESULTS_SAVE_DIR and DATASET_ROOT_DIR in experiments/main.py and UNSUP_DATASET_DIR in experiments/encoder.py
+```
+cd experiments
+```
+To train the Graph Auto Encoder
+```
+python encoder.py 
+```
+To train the TraPPM
+
+```
+python main.py
+```
+
 ## cite
 ```
 @InProceedings{pannerselvam1,

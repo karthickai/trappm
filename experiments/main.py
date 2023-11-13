@@ -17,7 +17,7 @@ NUM_EPOCHS = 100
 
 RESULTS_SAVE_DIR = "SOURCE_CODE_DIR"
 DATASET_ROOT_DIR = "DATASET_DIR/A100/"
-GAE_MODEL_PATH = "SOURCE_CODE_DIR/models/autoenc.pth"       
+GAE_MODEL_PATH =  os.path.join(RESULTS_SAVE_DIR, "models/autoenc.pth") 
 
 k_folds = get_dataset(DATASET_ROOT_DIR, batch_size=1, base_seed=1337, ratio=0.7, num_folds=5)
 
