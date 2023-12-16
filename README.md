@@ -61,5 +61,7 @@ and Brorsson, Mats",
 title="Can Semi-Supervised Learning Improve Prediction of
 Deep Learning Model Resource Consumption?",
 booktitle="Machine Learning for Systems Workshop at 37th NeurIPS Conference, 2023, New Orleans, LA, USA",
+url = "https://openreview.net/forum?id=C4nDgK47OJ"
+
 }
 ```
