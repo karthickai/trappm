@@ -1,0 +1,20 @@
+# models: ['convnext_base', 'convnext_large', 'convnext_small', 'convnext_tiny', 'densenet121', 'densenet161', 'densenet169', 'densenet201', 'efficientnet_b0', 'efficientnet_b1', 'efficientnet_b2', 'efficientnet_b3', 'efficientnet_b4', 'efficientnet_b5', 'efficientnet_b6', 'efficientnet_b7']
+# models: ['resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152', 'resnext50_32x4d', 'resnext101_32x8d', 'resnext101_64x4d', 'vgg11', 'vgg11_bn', 'vgg13', 'vgg13_bn', 'vgg16', 'vgg16_bn', 'vgg19', 'vgg19_bn', 'wide_resnet50_2', 'wide_resnet101_2', 'poolformer_m36', 'poolformer_m48', 'poolformer_s12', 'poolformer_s24', 'poolformer_s36']
+# models: ['swin_s3_base_224', 'swin_s3_small_224', 'swin_s3_tiny_224', 'swin_small_patch4_window7_224', 'swin_tiny_patch4_window7_224', 'mnasnet_050', 'mnasnet_075', 'mnasnet_100', 'mnasnet_140', 'mnasnet_a1', 'mnasnet_b1', 'mnasnet_small', 'mobilenetv2_035', 'mobilenetv2_050', 'mobilenetv2_075', 'mobilenetv2_100', 'mobilenetv2_110d', 'mobilenetv2_120d', 'mobilenetv2_140', 'mobilenetv3_large_075', 'mobilenetv3_large_100', 'mobilenetv3_large_100_miil', 'mobilenetv3_rw', 'mobilenetv3_small_050', 'mobilenetv3_small_075', 'mobilenetv3_small_100']
+models: ['visformer_small', 'visformer_tiny', 'vit_base_patch8_224', 'vit_base_patch16_18x2_224', 'vit_base_patch16_224', 'vit_base_patch16_224_miil', 'vit_base_patch16_224_sam', 'vit_base_patch16_384', 'vit_base_patch16_plus_240', 'vit_base_patch16_rpn_224', 'vit_base_patch32_224', "darknet17", "darknet21", "cait_s24_224", "cait_s24_384", "coat_lite_mini", "coat_lite_small", "coat_lite_tiny",  'mixnet_l', 'mixnet_m', 'mixnet_s', 'mixnet_xl']
+
+log_file: 'exp/A100/trappm_dataset4.log'
+exp1:
+  hyperparameters:
+    batch_size: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+    learning_rate: [0.1]
+    weight_decay: [0.0]
+    drop_rate: [0.]
+    optimizer: ["adam"]
+    model_dtype: ['float32']
+  benchmark:
+    warmp_iter: 5
+    bench_iter: 50
+    onnx_path: 'exp/A100/onnx/'
+    csv_file: 'exp/A100/results.csv'
+    
